@@ -248,6 +248,7 @@ def handle_requests():
             like_given = after_like - before_like
             status = 1 if like_given != 0 else 2
             result = {
+                "ApiOwner": "TANVIR"
                 "LikesGivenByAPI": like_given,
                 "LikesafterCommand": after_like,
                 "LikesbeforeCommand": before_like,
