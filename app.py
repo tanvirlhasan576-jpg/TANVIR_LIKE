@@ -311,7 +311,6 @@ def handle_requests():
     request_status = 1 if likes_increment > 0 else (2 if likes_increment == 0 else 3)
 
     response_data = {
-        "ApiOwner": "TANVIR"
         "LikesGivenByAPI": likes_increment,
         "LikesafterCommand": after_like_count,
         "LikesbeforeCommand": before_like_count,
@@ -340,6 +339,3 @@ def token_info():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True, use_reloader=False)
-
-
-#madebyagajayofficial
