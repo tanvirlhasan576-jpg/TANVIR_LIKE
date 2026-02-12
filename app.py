@@ -311,6 +311,7 @@ def handle_requests():
     request_status = 1 if likes_increment > 0 else (2 if likes_increment == 0 else 3)
 
     response_data = {
+        "ApiOwner": "TANVIR"
         "LikesGivenByAPI": likes_increment,
         "LikesafterCommand": after_like_count,
         "LikesbeforeCommand": before_like_count,
